@@ -1,0 +1,22 @@
+#Created on Oct 24, 2018
+#@author: Brandon Cao
+#bcao4
+#I pledge my honor that I have abided by the Stevens Honor System.
+
+
+#lab8
+#Computes the nth fib number
+
+0			read r1				# read n
+1			setn r2 0			# set r2 = 0
+2			setn r3 0			# set r3 = 0
+3			setn r4 0			# set sum = 0
+4			jeqzn r1 11			# if n==0, break loop
+5 			add r4 r2 r3		# r4 = r2 + r3
+6			write r2			# print r2
+7			copy r2 r3			# r2==r3
+8			copy r3 r4			# r3==r4
+9			addn r1 -1			# r1 = r1 - 1
+10			jumpn 4				# jump back to loop condition
+11			write r4			# print nth fib number
+12 			halt				# end program
